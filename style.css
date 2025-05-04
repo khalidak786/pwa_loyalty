@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  background: #f0f4f8;
+  background: url('background-image.jpg') no-repeat center center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,10 +60,24 @@ input {
   width: 90%;
   margin: 0.4rem auto;
   padding: 0.5rem;
-  background: #eee;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
+}
+
+.oauth-btn.google {
+  background: #db4437;
+  color: white;
+}
+
+.oauth-btn.facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.oauth-btn.twitter {
+  background: #1da1f2;
+  color: white;
 }
 
 .forgot-password {
