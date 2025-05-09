@@ -1,4 +1,5 @@
 import { auth } from './firebase.js';
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js";
 
 document.addEventListener('DOMContentLoaded', () => {
   const signupBtn = document.getElementById("signupBtn");
@@ -57,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       // Firebase sign-up logic
-      auth.createUserWithEmailAndPassword(email, password)
+      createUserWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           console.log("User signed up:", userCredential.user);
           alert("Sign-up successful! Welcome!");
@@ -77,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       // Firebase login logic
-      auth.signInWithEmailAndPassword(email, password)
+      signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
           console.log("User logged in:", userCredential.user);
           alert("Login successful! Welcome back!");
