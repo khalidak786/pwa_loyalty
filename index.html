@@ -1,39 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset=<!DOCTYPE html>
-  <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>CashBack Loyalty App</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <h2>Exciting way to earn CashBack on every purchase you make!!<br>Exciting Isn't it?<br>Sign up and start earning, Enjoy</h2>
-      
-      <div class="toggle-buttons">
-        <button id="signupBtn" class="toggle-btn active">Sign Up</button>
-        <button id="loginBtn" class="toggle-btn">Login</button>
-      </div>
-  
-      <div id="formSection">
-        <!-- Forms will be inserted here via JS -->
-      </div>
-  
-      <div class="oauth-section">
-        <p>Or continue with:</p>
-        <button class="oauth-btn">Login with Google</button>
-        <button class="oauth-btn">Login with Facebook</button>
-        <button class="oauth-btn">Login with Microsoft</button>
-        <button class="oauth-btn">Login with Apple</button>
-      </div>
-  
-      <p class="forgot-password">Forgot password?</p>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CashBack Loyalty App</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h2>
+      Exciting way to earn <span style="color: green; font-weight: bold;">CashBack</span>
+      on every purchase you make!!<br><br>
+      Exciting Isn't it?<br><br>
+      Sign up and start earning, Enjoy
+    </h2>
+
+    <div class="toggle-buttons">
+      <button id="signupBtn" class="toggle-btn active">Sign Up</button>
+      <button id="loginBtn" class="toggle-btn">Login</button>
     </div>
-  
-    <script src="script.js"></script>
-  </body>
-  </html>
-  
+
+    <div id="formSection">
+      <!-- Forms will be dynamically inserted here via JavaScript -->
+    </div>
+
+    <div class="oauth-section">
+      <p>Or continue with:</p>
+      <button class="oauth-btn google">Google</button>
+      <button class="oauth-btn facebook">Facebook</button>
+      <button class="oauth-btn microsoft">Microsoft</button>
+      <button class="oauth-btn apple">Apple</button>
+    </div>
+  </div>
+
+  <script src="script.js" type="module"></script>
+</body>
+</html>
